@@ -18,6 +18,9 @@
 .fs-28 {
   font-size: 28px !important;
 }
+.fs-130 {
+  font-size: 130px !important;
+}
 .fw-200 {
   font-weight: 200 !important;
 }
@@ -35,12 +38,24 @@
 }
 // end - Font Size
 
+.bg-black {
+  background-color: #000;
+}
+
 // start - Text
 .text-line-height {
   line-height: 1;
 }
 .text-center {
   text-align: center;
+}
+
+.text-cormorant {
+  font-family: "Cormorant";
+}
+
+.text-white {
+  color: #fff;
 }
 
 .text-grey {
@@ -64,6 +79,7 @@
 .cursor {
   cursor: pointer;
   &:hover {
+    color: #ccc;
     text-decoration: none;
   }
 }
@@ -148,21 +164,78 @@
 }
 // end - Element UI
 
+.btn-fill-white {
+  transition: all ease 0.3s;
+  background-color: #fff;
+  font-family: OpenSans;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #000;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px 30px;
+  border-radius: 0px;
+  &:hover {
+    background-color: transparent;
+    color: #fff;
+  }
+}
+.btn-white {
+  transition: all ease 0.3s;
+  background-color: transparent;
+  font-family: OpenSans;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #fff;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px 30px;
+  border-radius: 0px;
+  &:hover {
+    background-color: #fff;
+    color: #000;
+  }
+}
+
+.btn-fill-golden {
+  transition: all ease 0.3s;
+  background-color: #b49761;
+  font-family: OpenSans;
+  cursor: pointer;
+  box-sizing: border-box;
+  color: #fff;
+  border-color: #b49761;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px 30px;
+  border-radius: 0px;
+  &:hover {
+    border-color: #a49f95;
+    background-color: #a49f95;
+  }
+}
+
 // start - Hooper slider
 .hooper {
-  height: 250px !important;
-  border-radius: 10px !important;
+  height: 100% !important;
   &:focus {
     outline: none !important;
   }
   .hooper-slide {
-    padding: 0 3px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
     &:focus {
       outline: none !important;
     }
   }
   .hooper-list {
-    border-radius: 10px !important;
+    position: relative;
+    width: 100% !important;
     &:focus {
       outline: none !important;
     }
@@ -174,7 +247,7 @@
   }
 
   .hooper-prev {
-    background-color: rgba(31, 45, 61, 0.6);
+    background-color: #000;
     color: white;
     border-radius: 30px;
     transition: all 0.3s ease;
@@ -185,7 +258,7 @@
     }
   }
   .hooper-next {
-    background-color: rgba(31, 45, 61, 0.6);
+    background-color: #000;
     color: white;
     border-radius: 30px;
     transition: all 0.3s ease;
@@ -235,6 +308,9 @@
   }
   .fs-28 {
     font-size: 24px !important;
+  }
+  .fs-130 {
+    font-size: 40px !important;
   }
 }
 // end - Medias
