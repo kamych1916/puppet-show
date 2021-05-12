@@ -19,9 +19,10 @@
 
 html,
 body {
-  background: #edf6fb !important;
+  /* background: #edf6fb !important; */
   /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important; */
-  font-family: "Formular" !important;
+  font-family: "Open Sans", Arial, Helvetica, "Nimbus Sans L", sans-serif !important;
+  letter-spacing: 0.1rem;
 }
 @font-face {
   font-family: "Formular";
@@ -30,6 +31,21 @@ body {
     url("../fonts/Formular-Bold.woff") format("woff"),
     url("../fonts/Formular-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Cormorant";
+  src: local("CormorantGaramond-Bold"), local("CormorantGaramond-Bold"),
+    url("../fonts/CormorantGaramond-Bold.ttf") format("truetype");
+  font-weight: 1000;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Regular"), local("OpenSans-Regular"),
+    url("../fonts/OpenSans-Regular.ttf") format("truetype");
+  font-weight: 1000;
   font-style: normal;
 }
 
