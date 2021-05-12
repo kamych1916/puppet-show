@@ -2,18 +2,19 @@ export default {
   ssr: true,
 
   head: {
-    title: "puppet-show",
+    title: "Рыбинский Театр Кукол",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { name: "robots", content: "index, follow" },
       {
         name: "description",
-        content: "puppet-show"
+        content:
+          "Рыбинский театр кукол - это настоящий дворец, где живут куклы из любимых русских народных сказок, произведений классиков и современных писателей для детей."
       },
       {
         name: "keywords",
-        content: "puppet-show"
+        content: "Рыбинский Театр Кукол"
       }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
